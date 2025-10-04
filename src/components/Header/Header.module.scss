@@ -159,6 +159,7 @@
 
         &__burger {
             display: flex;
+            z-index: 2000;
         }
 
         &__links.header__links_open {
