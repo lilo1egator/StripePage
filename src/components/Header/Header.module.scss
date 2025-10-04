@@ -170,3 +170,17 @@
         }
     }
 }
+
+@media (max-width: 576px) {
+    .header {
+        &__burger {
+            display: flex;
+            span {
+                display: block;
+                height: 3px;
+                background-color: #75777F;
+                border-radius: 2px;
+            }
+        }
+    }
+}

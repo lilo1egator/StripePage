@@ -108,6 +108,9 @@
     }
 
     :global {
+        .rdp-caption_label {
+            font-size: 14px;
+        }
         .rdp-month {
             width: 100% !important; 
             min-width: 0;
