@@ -1,0 +1,41 @@
+@import '../../styles/colors.scss';
+
+.services {
+    h2 {
+        &::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 1px;
+            background-color: #D6DDEB;
+            margin: 75px 0;
+        }
+    }
+
+    &__descr {
+        display: block;
+        color: #515B6F;
+        margin-top: 8px;
+        font-weight: 400;
+    }
+
+    &__items {
+        margin-top: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        justify-content: center;
+    }
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    &__title {
+        color: $secondary;
+        font-size: 24px;
+        font-family: 'Lato';
+        font-weight: 900;
+    }
+}

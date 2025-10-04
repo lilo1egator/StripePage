@@ -1,0 +1,51 @@
+@import '../../styles/colors.scss';
+
+.drivers {
+
+    &__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 11px;
+    }
+    &__btn {
+        color: $primary;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 225px);
+        gap: 16px;
+        justify-content: center;
+    }
+    &__card {
+        border: 1px solid #D6DDEB;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 24px 0;
+        gap: 16px;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    &__name {
+        color: $secondary;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    &__descr {
+        color: #7C8493;
+    }
+}

@@ -1,0 +1,132 @@
+.footer {
+    background-color: #202430;
+    color: #D6DDEB;
+    padding: 64px 0 40px 0;
+
+    &__top {
+        display: flex;
+        gap: 50px;
+    }
+    &__span {
+        font-size: 20px;
+        margin-top: 39px;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 18px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        a {
+            color: #D6DDEB;
+            transition: all .5s;
+            &:hover {
+                color: #f7f7f7;
+            }
+        }
+    }
+
+    &__form {
+        max-width: 360px;
+        form {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    }
+    &__input {
+        height: 43px;
+        width: 200px;
+        margin-right: 8px;
+        padding-left: 16px;
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        &_a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #A8ADB7;
+            transition: all .5s;
+            &:hover {
+                color: #cbcfd8;
+            }
+        }
+    }
+
+    &__divider {
+        width: 100%;
+        height: 1px;
+        background-color: #4b4b4b;
+        margin: 64px 0 40px 0;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__copyright {
+        color: #838383;
+    }
+    &__socials {
+        display: flex;
+        gap: 24px;
+        a {
+            background-color: #4b4b4b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            transition: all .5s;
+            
+            &:hover {
+                background-color: #a3a3a3;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1439px) {
+    .container {
+        max-width: 1100px;
+    }
+    form {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .footer {
+        &__top {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 60px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        &__top {
+            justify-content: start;
+        }
+        &__bottom {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}

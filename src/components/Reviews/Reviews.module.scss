@@ -1,0 +1,158 @@
+@import '../../styles/colors.scss';
+
+.reviews {
+    margin-top: 75px;
+    background: url('./reviews/bg.png');
+    padding: 75px 0 42px 0;
+
+    h2 {
+        font-size: 43px;
+        font-weight: 900;
+        margin-bottom: 22px;
+        span {
+            color: #26A4FF;
+        }
+    }
+
+
+    &__descr {
+        color: $secondary;
+        line-height: 25px;
+        margin-bottom: 42px;
+    }
+
+    &__container {
+        display: flex;
+        gap: 32px;
+    }
+
+    &__slider {
+        position: relative;
+        overflow: hidden;
+        max-width: 740px;
+    }
+
+    &__slides {
+        display: flex;
+        transition: transform 0.5s ease;
+        gap: 32px;
+    }
+
+    &__slide {
+        background: #fff;
+        height: 410px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+        border-radius: 10px;
+        flex: 1 0 calc(50% - 15px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+
+        &_text {
+            display: flex;
+            flex-direction: column;
+        }
+        &_head {
+            display: flex;
+            gap: 22px;
+        }
+        &_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__location {
+        color: $primary;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__name {
+        color: $secondary;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__date {
+        font-size: 14px;
+        color: #7C8493;
+    }
+
+    &__text {
+        color: $secondary;
+        margin: 22px 0;
+        line-height: 25px;
+    }
+
+    &__stars {
+        img {
+            margin-right: 5px;
+        }
+    }
+
+    &__dots {
+        margin-top: 42px;
+        text-align: center;
+    }
+
+    .dot {
+        height: 12px;
+        width: 12px;
+        margin: 0 6px;
+        background-color: #D6DDEB;
+        border-radius: 50%;
+        display: inline-block;
+        cursor: pointer;
+        transition: background 0.3s;
+        border: none;
+
+        &.active {
+        background-color: $primary;
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .reviews {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__slider {
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .reviews {
+        &__descr {
+            margin-bottom: 14px;
+        }
+        &__slider {
+            width: 700px;
+        }
+        &__name {
+            font-size: 20px;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        &__descr {
+            margin-bottom: 14px;
+        }
+        &__slider {
+            width: 80%;
+        }
+        &__name {
+            font-size: 20px;
+        }
+    }
+}

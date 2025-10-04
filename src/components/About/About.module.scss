@@ -1,0 +1,88 @@
+@import '../../styles/colors.scss';
+
+.layout {
+    display: flex;
+    gap: 64px;
+    padding: 72px 0;
+
+    main {
+        flex: 2; 
+        h2 {
+            margin-bottom: 16px;
+        }
+    }
+
+    aside {
+        flex: 1;
+    }
+}
+
+.about {
+
+    &__descr {
+        margin-bottom: 24px;
+    }
+
+    &__text {
+        color: #515B6F;
+        line-height: 24px;
+    }
+    
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    &__link {
+        border: 1px solid $primary;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        transition: all .5s;
+        span {
+            color: $primary;
+        }
+        &:hover {
+            background-color: #6b67f0;
+            span {
+                color: #fff
+            }
+        }
+    }
+
+    &__images {
+        display: grid;
+        margin-top: 40px;
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        gap: 12px;
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+@media (max-width: 992px) {
+    .layout {
+        display: block;
+
+        aside {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .about {
+        &__links {
+            a {
+                width: 100%;
+            }
+        }
+    }
+}
