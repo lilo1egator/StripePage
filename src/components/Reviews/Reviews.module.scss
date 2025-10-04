@@ -48,6 +48,10 @@
         border-radius: 10px;
         flex: 1 0 calc(50% - 15px);
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        
+        &_avatar {
+            border-radius: 100%;
+        }
 
         &_text {
             display: flex;
@@ -153,6 +157,33 @@
         }
         &__name {
             font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .reviews {
+        margin-top: 20px;
+
+        &__slide {
+            height: auto;
+            padding: 10px;
+
+            &_avatar {
+                width: 70px;
+            }
+
+            &_text {
+                font-size: 14px;
+            }
+            &_head {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        &__name {
+            font-size: 16px;
         }
     }
 }

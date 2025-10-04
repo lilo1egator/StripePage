@@ -58,7 +58,7 @@ export default function Reviews() {
                     }}>
                   <div className={styles.reviews__slide_text}>
                     <div className={styles.reviews__slide_head}>
-                      <img src={review.src} alt={review.name} />
+                      <img className={styles.reviews__slide_avatar} src={review.src} alt={review.name} />
                       <div className={styles.reviews__slide_info}>
                         <h3 className={styles.reviews__name}>{review.name}</h3>
                         <p className={styles.reviews__location}>{review.location}</p>

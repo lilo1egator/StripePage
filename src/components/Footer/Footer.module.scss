@@ -128,5 +128,12 @@
             align-items: center;
             gap: 10px;
         }
+
+        form {
+            flex-direction: column;
+            input {
+                width: 100%;
+            }
+        }
     }
 }
